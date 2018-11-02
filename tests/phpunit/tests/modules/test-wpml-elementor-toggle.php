@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Class Test_WPML_Elementor_Toggle
+ * Class Test_WPML_Qazana_Toggle
  *
  * @group page-builders
- * @group elementor
+ * @group qazana
  */
-class Test_WPML_Elementor_Toggle extends OTGS_TestCase {
+class Test_WPML_Qazana_Toggle extends OTGS_TestCase {
 
 	/**
 	 * @test
@@ -14,7 +14,7 @@ class Test_WPML_Elementor_Toggle extends OTGS_TestCase {
 	public function it_get_fields() {
 
 		$expected = array( 'tab_title', 'tab_content' );
-		$subject = new WPML_Elementor_Toggle();
+		$subject = new WPML_Qazana_Toggle();
 		$this->assertEquals( $expected, $subject->get_fields() );
 	}
 
@@ -22,7 +22,7 @@ class Test_WPML_Elementor_Toggle extends OTGS_TestCase {
 	 * @test
 	 */
 	public function it_get_items_field() {
-		$subject = new WPML_Elementor_Toggle();
+		$subject = new WPML_Qazana_Toggle();
 		$this->assertEquals( 'tabs', $subject->get_items_field() );
 	}
 }

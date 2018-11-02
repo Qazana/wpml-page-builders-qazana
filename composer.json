@@ -1,12 +1,12 @@
 {
-  "name": "wpml/page-builders-elementor",
-  "description": "A library used by WPML to handle Elementor",
+  "name": "Qazana/page-builders-qazana",
+  "description": "A library used by WPML to handle Qazana",
   "type": "library",
   "license": "GPL-3.0-or-later",
   "authors": [
     {
-      "name": "OnTheGoSystems",
-      "email": "hello@wpml.org"
+      "name": "Qazana",
+      "email": "hello@qazana.net"
     }
   ],
   "autoload": {

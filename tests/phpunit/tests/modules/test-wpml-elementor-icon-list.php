@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Class Test_WPML_Elementor_Icon_List
+ * Class Test_WPML_Qazana_Icon_List
  *
  * @group page-builders
- * @group elementor
+ * @group qazana
  */
-class Test_WPML_Elementor_Icon_List extends OTGS_TestCase {
+class Test_WPML_Qazana_Icon_List extends OTGS_TestCase {
 
 	/**
 	 * @test
@@ -14,7 +14,7 @@ class Test_WPML_Elementor_Icon_List extends OTGS_TestCase {
 	public function it_get_fields() {
 
 		$expected = array( 'text', 'link' => array( 'url' ) );
-		$subject = new WPML_Elementor_Icon_List();
+		$subject = new WPML_Qazana_Icon_List();
 		$this->assertEquals( $expected, $subject->get_fields() );
 	}
 
@@ -22,7 +22,7 @@ class Test_WPML_Elementor_Icon_List extends OTGS_TestCase {
 	 * @test
 	 */
 	public function it_get_items_field() {
-		$subject = new WPML_Elementor_Icon_List();
+		$subject = new WPML_Qazana_Icon_List();
 		$this->assertEquals( 'icon_list', $subject->get_items_field() );
 	}
 
@@ -69,7 +69,7 @@ class Test_WPML_Elementor_Icon_List extends OTGS_TestCase {
 			'LINK'
 		);
 
-		$subject = new WPML_Elementor_Icon_List();
+		$subject = new WPML_Qazana_Icon_List();
 
 		$actual_strings = $subject->get( $node_id, $element, $strings );
 

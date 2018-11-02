@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Class Test_WPML_Elementor_Form
+ * Class Test_WPML_Qazana_Form
  *
  * @group page-builders
- * @group elementor
+ * @group qazana
  */
-class Test_WPML_Elementor_Form extends OTGS_TestCase {
+class Test_WPML_Qazana_Form extends OTGS_TestCase {
 
 	/**
 	 * @test
@@ -14,7 +14,7 @@ class Test_WPML_Elementor_Form extends OTGS_TestCase {
 	public function it_get_fields() {
 
 		$expected = array( 'field_label', 'placeholder', 'field_html', 'acceptance_text', 'field_options' );
-		$subject = new WPML_Elementor_Form();
+		$subject = new WPML_Qazana_Form();
 		$this->assertEquals( $expected, $subject->get_fields() );
 	}
 
@@ -22,7 +22,7 @@ class Test_WPML_Elementor_Form extends OTGS_TestCase {
 	 * @test
 	 */
 	public function it_get_items_field() {
-		$subject = new WPML_Elementor_Form();
+		$subject = new WPML_Qazana_Form();
 		$this->assertEquals( 'form_fields', $subject->get_items_field() );
 	}
 }
