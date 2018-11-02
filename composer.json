@@ -1,5 +1,5 @@
 {
-  "name": "Qazana/page-builders-qazana",
+  "name": "Qazana/wpml-page-builders-qazana",
   "description": "A library used by WPML to handle Qazana",
   "type": "library",
   "license": "GPL-3.0-or-later",
